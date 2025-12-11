@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in js</title>
+</head>
+
+<body>
+    <h2>1. Print Numbers</h2>
+    <p>Write a loop to print numbers from 1 to 20.</p>
+    <script>
+        for (let i = 1; i <= 20; i++) {
+            console.log(i);
+        }
+    </script>
+
+    <h2>2. Sum of First N Numbers</h2>
+    <p>Take a number n from the user and find the sum of numbers from 1 to n.</p>
+    <script>
+        let n = Number(prompt("Enter a number:"));
+        let sum = 0;
+
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+        console.log(`Sum of numbers from 1 to ${n} = ${sum}`);
+    </script>
+
+
+    <h2>3. Multiplication Table</h2>
+    <p>Ask the user for a number and print its multiplication table (up to 10).</p>
+    <script>
+        var a = Number(prompt("Enter a number for table:"));
+
+        for (var i = 1; i <= 10; i++) {
+            console.log(a + " x " + i + " = " + (a * i));
+        }
+    </script>
+
+    <h2>4. Reverse Counting</h2>
+    <p>Use a loop to print numbers from 50 down to 1.</p>
+    <script>
+        for (let i = 50; i >= 1; i--) {
+            console.log(i);
+        }
+    </script>
+
+    <h2>5. Factorial</h2>
+    <p>Write a program to calculate the factorial of a given number using a loop.</p>
+    <script>
+        let b = 5;
+        let fact = 1;
+
+        for (let i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        console.log("Factorial =", fact);
+    </script>
+
+    <h2>6. Even and Odd Numbers</h2>
+    <p>Use a loop to print only even numbers between 1 and 30.</p>
+    <script>
+        for (let i = 1; i <= 30; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+    </script>
+
+    <h2>7. Characters in a String</h2>
+    <p>Take a string input and use a loop to print each character separately.</p>
+    <script>
+        let str = "hello";
+
+        for (let i = 0; i < str.length; i++) {
+            console.log(str[i]);
+        }
+    </script>
+
+    <h2>8. Count Digits</h2>
+    <p>Ask the user for a number and use a loop to count how many digits it has.</p>
+    <script>
+        let num = 98765;
+        let count = 0;
+
+        while (num > 0) {
+            count++;
+            num = Math.floor(num / 10);
+        }
+
+        console.log("Digits =", count);
+
+    </script>
+
+    <h2>9.Pattern Printing</h2>
+    <p>Write a loop to print the following pattern (for 5 rows):</p>
+    <script>
+        let rows = 5;
+
+        for (let i = 1; i <= rows; i++) {
+            let pattern = "";
+            for (let j = 1; j <= i; j++) {
+                pattern += "*";
+            }
+            console.log(pattern);
+        }
+    </script>
+
+    <h2>10.Array Sum</h2>
+    <p>Given an array of numbers, use a loop to calculate and print the total sum.</p>
+    <script>
+        let arr = [10, 20, 30, 40, 50]; 
+        let sum1= 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+
+        console.log("Total Sum =", sum);
+
+    </script>
+</body>
+
+</html>
+
